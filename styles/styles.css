@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  font-family: 'Kumbh sans', sans-serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-position: center/cover;
+  height: 100vh;
+  padding-top: 250px;
+}
+
+.white_box {
+  z-index: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background-color: #fff;
+  background-image: url(/faq-accordion-card-main/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  color: #4a4b5e;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+}
+
+.white_box .quest_box h1 {
+  font-size: 32px;
+  padding-top: 110px;
+  text-align: center;
+  color: #4a4b5e;
+  padding-bottom: 25px;
+}
+
+.white_box .quest_box .quest hr {
+  margin-bottom: 10px;
+}
+
+.white_box .quest_box .quest .question {
+  display: inline;
+  padding-right: 20px;
+  color: #4a4b5e;
+  font-weight: 400px;
+}
+
+.white_box .quest_box .quest .down_arrow {
+  display: inline;
+}
+
+.white_box .quest_box .quest #answer {
+  display: none;
+}
+
+.white_box .top_logo {
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+
+@media (min-width: 500px) {
+  .white_box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'logo_name quest_box';
+    background-color: #fff;
+    background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+    color: #4a4b5e;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    padding: 0px 20px 30px 0px;
+    margin-bottom: 10px;
+  }
+  .white_box .quest_box {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: quest_box;
+  }
+  .white_box .quest_box h1 {
+    font-size: 32px;
+    padding-top: 50px;
+    text-align: center;
+    color: #4a4b5e;
+    padding-bottom: 25px;
+  }
+  .white_box .quest_box .quest hr {
+    margin-bottom: 10px;
+  }
+  .white_box .quest_box .quest .question {
+    display: inline;
+    padding-right: 20px;
+    color: #4a4b5e;
+    font-weight: 400px;
+  }
+  .white_box .quest_box .quest .down_arrow {
+    display: inline;
+  }
+  .white_box .quest_box .quest #answer {
+    display: none;
+  }
+  .white_box .logo_name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo_name;
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

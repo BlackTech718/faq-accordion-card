@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="styles/styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,26 +14,74 @@
   </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+<!-- White container box holding all content -->
+<div class="white_box">
+  <div class="quest_box">
+    <h1>FAQ</h1>
+    <div class="quest">
+      <p class="question">
+        How many team members can I invite?
+      </p><span><img  id="down_arrow" src="/faq-accordion-card-main/images/icon-arrow-down.svg" alt=""></span><br>
+      <p id="answer">
+        You can invite up to 2 additional users on the Free plan. There is no limit on 
+        team members for the Premium plan.
+      </p><br>
+      <br>
+      <hr>
+    </div>
+      <div class="quest">
+        <p class="question">
+          What is the maximum file upload size?
+        </p><span><img id="down_arrow" src="/faq-accordion-card-main/images/icon-arrow-down.svg" alt=""></span><br>
+        <p id="answer">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p><br>
+        <hr>
+      </div>
+      <div class="quest">
+        <p class="question">
+          How do I reset my password?
+        </p><span><img id="down_arrow" src="/faq-accordion-card-main/images/icon-arrow-down.svg" alt=""></span><br>
+        <p id="answer">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p><br>
+        <hr>
+      </div>
+      <div class="quest">
+        <p class="question">
+          Can I cancel my subscription?
+        </p><span id="down_arrow"><img  src="/faq-accordion-card-main/images/icon-arrow-down.svg" alt=""></span><br>
+        <p id="answer">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p><br>
+        <hr>
+      </div>
+      <div class="quest">
+        <p class="question">
+          Do you provide additional support?
+        </p><span><img src="/faq-accordion-card-main/images/icon-arrow-down.svg" alt=""></span><br>
+        <p id="answer">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p><br>
+      </div>
+    </p>
+  </div>
+  <div class="logo_name">
+    <img class="top_logo" src="/faq-accordion-card-main/images/illustration-woman-online-mobile.svg" alt="" class="logo">
+  </div>
+</div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/faq-accordion-card-main/styles/script.js"></script>
 </body>
 </html>
