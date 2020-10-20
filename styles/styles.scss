@@ -60,10 +60,10 @@ body{
                 color:$Very_dark_grayish_blue;
                 font-weight: 400px;
             }
-            .down_arrow{
+            #down_arrow,#down_arrow1,#down_arrow2,#down_arrow3,#down_arrow4{
                 display:inline;
             }
-            #answer{display:none;}
+            #answer,#answer1,#answer2,#answer3,#answer4{display:none;}
            
         }
     }
@@ -115,10 +115,7 @@ body{
                     color:$Very_dark_grayish_blue;
                     font-weight: 400px;
                 }
-                .down_arrow{
-                    display:inline;
-                }
-                #answer{display:none;}
+                
                
             }
         }
