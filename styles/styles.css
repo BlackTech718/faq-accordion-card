@@ -12,8 +12,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(#af67e9, #6565e7);
   background-repeat: no-repeat;
-  background-position: center/cover;
-  height: 100vh;
+  background-position: center;
+  height: 100%;
   padding-top: 250px;
 }
 
@@ -60,6 +60,10 @@ body {
 
 .white_box .quest_box .quest #answer, .white_box .quest_box .quest #answer1, .white_box .quest_box .quest #answer2, .white_box .quest_box .quest #answer3, .white_box .quest_box .quest #answer4 {
   display: none;
+}
+
+.white_box .quest_box .quest img, .white_box .quest_box .quest span {
+  display: inline;
 }
 
 .white_box .top_logo {

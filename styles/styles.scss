@@ -24,15 +24,15 @@ $Light_grayish_blue: hsl(240, 5%, 91%);
 body{
     background: linear-gradient($Soft_violet , $Soft_blue);
     background-repeat: no-repeat;
-    background-position: center/cover;
-    height: 100vh;
+    background-position: center;
+    height: 100%;
     padding-top: 250px;
 }
 .white_box{
     z-index:0;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #fff;
+    background-color:#fff;
     background-image: url(/faq-accordion-card-main/images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position:top;
@@ -64,6 +64,7 @@ body{
                 display:inline;
             }
             #answer,#answer1,#answer2,#answer3,#answer4{display:none;}
+            img,span{display:inline;}
            
         }
     }
