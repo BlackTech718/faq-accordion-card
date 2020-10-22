@@ -108,9 +108,10 @@ body{
 
 @media(min-width: 500px){
     #container{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0.5fr;
         background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
-        background-image: absolute;
+        background-position: -480px -190px;
+        
         top:100px;
         .rightcontent{
             grid-column: 2/3;
