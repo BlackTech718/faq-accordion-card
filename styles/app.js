@@ -6,6 +6,7 @@ var answers = document.getElementsByClassName("answer");
 
 for(i = 0; i< qblock.length; i++){
     qblock[i].addEventListener("click",function(){
+        
 
         for(i = 0 ; i< qblock.length; i++){
             qblock[i].children[0].classList.remove("question_bold");

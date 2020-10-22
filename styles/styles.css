@@ -43,7 +43,7 @@ body {
   text-align: center;
   padding-top: 130px;
   padding-bottom: 25px;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 #container .rightcontent .top_logo {
@@ -91,5 +91,32 @@ body {
 
 #container .qa_block .question .answer_show {
   display: block;
+}
+
+@media (min-width: 500px) {
+  #container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
+    background-image: absolute;
+    top: 100px;
+  }
+  #container .rightcontent {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+  #container .top_logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+    content: url(/faq-accordion-card-main/images/illustration-woman-online-desktop.svg);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
