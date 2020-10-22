@@ -5,6 +5,7 @@ document.getElementById("down_arrow").onclick = function() {
         var answer = document.getElementById("answer"); 
         var downarrow = document.getElementById("down_arrow");
         var question = document.getElementById("question");
+        var quest1block = document.getElementsByClassName
 
         if(answer.style.display === "block"){
             answer.style.display = "none";
@@ -16,8 +17,6 @@ document.getElementById("down_arrow").onclick = function() {
             downarrow.style.transform = "rotate(180deg)";
         }
     };
-
-
 document.getElementById("down_arrow1").onclick = function() {  
     fun1();  
     };  
@@ -37,8 +36,6 @@ document.getElementById("down_arrow1").onclick = function() {
         } 
     
     };
-
-
 document.getElementById("down_arrow2").onclick = function() {  
     fun2();  
     };  
@@ -57,8 +54,6 @@ document.getElementById("down_arrow2").onclick = function() {
             downarrow2.style.transform = "rotate(180deg)";
         }   
     };
-
-
 document.getElementById("down_arrow3").onclick = function() {  
     fun3();  
     };  
@@ -77,8 +72,6 @@ document.getElementById("down_arrow3").onclick = function() {
             downarrow3.style.transform = "rotate(180deg)";
         }   
     };
-
-
 document.getElementById("down_arrow4").onclick = function() {  
     fun4();  
     };  
