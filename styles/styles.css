@@ -13,8 +13,13 @@ body {
   background: linear-gradient(#af67e9, #6565e7);
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   padding-top: 250px;
+  padding-bottom: 20px;
+}
+
+body .logo_block {
+  display: none;
 }
 
 #container {
@@ -24,15 +29,22 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   background-color: #fff;
-  background-image: url(/faq-accordion-card-main/images/bg-pattern-mobile.svg);
+  background-image: url(/images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-position: top;
   color: #4a4b5e;
   max-width: 80%;
-  margin: 0 auto 0 auto;
-  border-radius: 10px;
+  max-height: 500px;
+  border-radius: 25px;
   padding: 20px 20px;
-  margin-bottom: 10px;
+  margin: 0 auto 0 auto;
+}
+
+#container .top_logo {
+  z-index: 1;
+  position: relative;
+  top: -530px;
+  left: -6%;
 }
 
 #container .rightcontent {
@@ -46,33 +58,54 @@ body {
   font-size: 36px;
 }
 
-#container .rightcontent .top_logo {
-  z-index: 1;
-  position: absolute;
-  top: -130px;
-  right: 10px;
-}
-
 #container .qa_block {
   z-index: 0;
   position: relative;
+  left: 20px;
+}
+
+#container .qa_block .question {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.2fr;
+      grid-template-columns: 1fr 0.2fr;
+      grid-template-areas: "q1 da" "a1 a1" "a1 a1" "hrl hrl";
 }
 
 #container .qa_block .question .question_1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: q1;
   padding-bottom: 5px;
   font-weight: normal;
   display: inline;
-  padding-right: 30px;
   line-height: 3rem;
+  cursor: pointer;
+}
+
+#container .qa_block .question .question_1 hr {
+  grid-area: hr1;
+  max-width: 100%;
+}
+
+#container .qa_block .question .question_1.question_1:hover {
+  font-weight: 700;
 }
 
 #container .qa_block .question .down_arrow {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: da;
   display: inline;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  margin-top: 18px;
 }
 
 #container .qa_block .question .arrow {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: da;
   display: inline;
   -webkit-transform: none;
           transform: none;
@@ -83,10 +116,16 @@ body {
 }
 
 #container .qa_block .question .answer {
+  max-width: 90%;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a1;
   color: #787887;
-  padding-top: 5px;
   padding-bottom: 10px;
   display: none;
+  line-height: 1.25rem;
 }
 
 #container .qa_block .question .answer_show {
@@ -94,12 +133,22 @@ body {
 }
 
 @media (min-width: 500px) {
+  body {
+    padding: 100px;
+  }
+  body .logo_block {
+    display: block;
+  }
   #container {
-    -ms-grid-columns: 1fr 0.5fr;
-        grid-template-columns: 1fr 0.5fr;
-    background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
-    background-position: -480px -190px;
-    top: 100px;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-size: 80%;
+    background-position: -400px -180px;
+    max-width: 70%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
   }
   #container .rightcontent {
     -ms-grid-column: 2;
@@ -108,6 +157,12 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     grid-row: 1/4;
+    overflow: hidden;
+    padding: 0px;
+  }
+  #container .rightcontent h2 {
+    text-align: left;
+    padding-top: 50px;
   }
   #container .top_logo {
     -ms-grid-column: 1;
@@ -116,7 +171,20 @@ body {
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2/5;
-    content: url(/faq-accordion-card-main/images/illustration-woman-online-desktop.svg);
+    content: url(/images/illustration-woman-online-desktop.svg);
+    position: absolute;
+    max-width: 70%;
+    left: -80px;
+    top: -100px;
+  }
+  #container .qa_block {
+    max-width: 100%;
+  }
+  .logo_block {
+    z-index: 1;
+    position: absolute;
+    top: 210px;
+    left: 150px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
