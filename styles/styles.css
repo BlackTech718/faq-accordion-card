@@ -137,63 +137,11 @@ body .logo_block {
           transform: rotate(180deg);
 }
 
-#container .qa_block .question_1.boldf {
+#container .qa_block .question.open .question_1 {
   font-weight: 700;
 }
 
-@media (min-width: 500px) {
-  body {
-    padding: 100px;
-  }
-  body .logo_block {
-    display: block;
-  }
-  #container {
-    -ms-grid-columns: 60% 40%;
-        grid-template-columns: 60% 40%;
-    background-image: url(/images/bg-pattern-desktop.svg);
-    background-size: 80%;
-    background-position: -400px -180px;
-    max-width: 70%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-  }
-  #container .rightcontent {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1/4;
-    overflow: hidden;
-    padding: 0px;
-  }
-  #container .rightcontent h2 {
-    text-align: left;
-    padding-top: 50px;
-  }
-  #container .top_logo {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    grid-row: 2/5;
-    content: url(/images/illustration-woman-online-desktop.svg);
-    position: absolute;
-    max-width: 70%;
-    left: -80px;
-    top: -100px;
-  }
-  #container .qa_block {
-    max-width: 100%;
-  }
-  .logo_block {
-    z-index: 1;
-    position: absolute;
-    top: 210px;
-    left: 150px;
-  }
+#container .qa_block .question_1.boldf {
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */
